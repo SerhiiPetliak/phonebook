@@ -1,0 +1,218 @@
+html,
+body {
+    height: 100%; 
+    background-image: url(bg/Database-Marketing-e1409270317717.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+/* */
+.navbar-inverse,
+.footer{
+    background-color: #01579b;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+}
+.breadcrumb{
+    border-radius: 0px;
+    background-color: rgba(25, 140, 231, 0.5);
+}
+.breadcrumb a,
+.breadcrumb .active{
+    color: #fff;
+}
+.footer{
+    color: #fff;
+}
+.breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+.btn-link{
+    color: #fff !important;
+}
+/* */
+.main_container{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.phonebook{
+    color: #fff;
+}
+.phonebook table{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.phonebook a{
+    color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgba(7, 108, 137, 0.5);
+}
+.has-error .help-block{
+    color: #F56360;
+}
+.admin_counter{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    border: 1px solid red;
+}
+.mmenu_item{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mmenu_item:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title_link{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: bolder;
+}
+.title_link:hover{
+    text-decoration: none;
+    transform: scale(1.1); /* CSS3 */
+    -moz-transform: scale(1.1); /* Firefox */
+    -webkit-transform: scale(1.1); /* Webkit */
+    
+}
+.title_link{
+    font-family: 'Oranienbaum', serif;
+}
+.cred{
+    background-color: red;
+}
+.transparent_block{
+    display: none;
+}
+.phonebook th{
+    text-align: center;
+}
+.phonebook_table{
+
+}
+.phonebook_table th{
+    color: #fff;
+    text-align: left;
+    width: 30%;
+}
+.phonebook_table{
+    color: #fff;
+    text-align: left;
+}
+.red_label{
+    background-color: #b71c1c;
+    padding: 1px;
+    border-radius: 3px;
+    margin-bottom: 1px;
+}
+.green_label{
+    background-color: #2e7d32;
+    padding: 1px;
+    border-radius: 3px;
+    margin-bottom: 1px;
+}
+.big_white_text{
+    color: #fff;
+    font-weight: bolder;
+}
