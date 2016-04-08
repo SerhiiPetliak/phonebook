@@ -3,7 +3,8 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
-use app\models\phonebook;
+use app\models\Phonebook;
+use app\models\Address;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Address */
@@ -11,21 +12,25 @@ use app\models\phonebook;
 
 $params = Yii::$app->request->get();
 
-if(isset($params['idc'])){
+
+
+if(isset($params['idc']) && !isset($params['t'])){
     $data = Phonebook::find()->where(['id' => $params['idc']])->asArray()->all();
 }else{
-    $data['unitName'] = "";
-    $data['facultyName'] = "";
-    $data['post'] = "";
-    $data['PIB'] = "";
-    $data['telephoneOut'] = "";
-    $data['telephoneIn'] = "";
+    $data[0]['unitName'] = "";
+    $data[0]['facultyName'] = "";
+    $data[0]['post'] = "";
+    $data[0]['PIB'] = "";
+    $data[0]['telephoneOut'] = "";
+    $data[0]['telephoneIn'] = "";
     //$data['telephoneForward'] = "";
-    $data['email'] = "";
-    $data['corps'] = "";
-    $data['cabinet'] = "";
+    $data[0]['email'] = "";
+    $data[0]['corps'] = "";
+    $data[0]['cabinet'] = "";
 }
-
+if(isset($params['t'])){
+    $data = Address::find()->where(['id' => $params['idc']])->asArray()->all();
+}
 ?>
 
 <div class="phonebook">

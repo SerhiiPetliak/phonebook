@@ -263,8 +263,12 @@ foreach ($allArray as $key) {
 
         $dt = Yii::$app->request->get();
 
-        if(!(Yii::$app->user->isGuest)){
-            echo Html::a('Відхилити', Url::to(Url::to(['check/create','itemId'=> $dt['idc']]), true), ['class'=>'btn btn-danger']);
+        if(isset($dt['idc'])){
+
+            if(!(Yii::$app->user->isGuest)){
+                echo Html::a('Відхилити', Url::to(Url::to(['check/create','itemId'=> $dt['idc']]), true), ['class'=>'btn btn-danger']);
+            }
+
         }
     ?>
 
